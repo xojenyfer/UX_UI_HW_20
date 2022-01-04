@@ -1,0 +1,263 @@
+  
+/*navigation below*/
+  .inline-block {
+    display: inline-block;
+    vertical-align: text-top;
+    padding: 10px;
+    font-family: Noto Sans, sans-serif;
+    font-style: normal;
+    font-size: 20px;
+  
+    /*background-color: blue;*/
+  }
+  
+  /* temporarily added color to give visual of changes*/
+  .logo {
+    width: 23%;
+    padding: 1%;
+  }
+  /* temporarily added color to give visual of changes
+  */
+  .navigation {
+    display:flex;
+    justify-content: space-around;
+    height:90px; 
+    /*background-color: red; */
+  }
+  /* hero section below*/
+  .herolmg { 
+    height: 500px;
+    padding: 25px;
+  
+    /* for mobile responsive design*/
+    /* display:flex;
+    flex-wrap: wrap; */
+  }
+  
+  /* read an article to add display: flex, flex-wrap: wrap; to parent container,
+  when I do, it moves the text to the back of the picture. profile pic does not move */
+  
+  .profilePic {
+    position: absolute;
+    left: 112px;
+    top: 130px;
+    z-index:1;
+  }
+  
+  .content {
+   float:right;
+   width: 648px;
+   margin-right: 110px;
+    /* background-color:yellow;
+  for mobile responsive design  flex; 50%;
+    */
+  }
+    
+  .buttonsContainer {
+    position:absolute;
+    top: 650px;
+    left: 492px;
+    padding: 20px;
+  }
+  
+  
+  
+  /* project section below*/
+  
+  .button {
+    margin: 10px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  
+  .csContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 142px; 
+  margin-bottom: 338px; 
+  top: 900px;
+  
+   /* for mobile responsive design */
+  display:flex;
+  flex-wrap: wrap;
+  /* background-color: orange; */
+  }
+  
+  .caseStudyDescriptionBox{
+  display:flex;
+  align-items: center;
+  
+  width: 1025px;
+  height:530px;
+  margin-left: 6px;
+  margin-bottom: 142px;
+  position:relative;
+  background-color:#A74546;
+  
+   /* for mobile responsive design flex: 50%; */
+  
+  }
+  .projectPictureContainer {
+    display:flex;
+    flex-wrap: wrap;
+    
+  }
+  
+  .projectPicture1, .projectPicture2, .projectPicture3{
+  width: 700px;
+  height: 422px;
+  margin-bottom: 250px;
+  position:absolute;
+  top: 208px;
+  left: 520px;
+  /* z-index: 100; */
+  
+  background-color:gray;
+  }
+  
+  
+  .csDescription {
+    width:420px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+  
+  /* footer section below*/
+  .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+/* hover animation*/
+.projectPicture1 { transition: all .5s cubic-bezier(0.4, 0, 1, 1); }
+.projectPicture1:hover { transform: scale(1.1); }
+
+.projectPicture2 { transition: all .5s cubic-bezier(0.4, 0, 1, 1); }
+.projectPicture2:hover { transform: scale(1.1); }
+
+.projectPicture3 { transition: all .5s cubic-bezier(0.4, 0, 1, 1); }
+.projectPicture3:hover { transform: scale(1.1); }
+  
+  /*blobs below*/
+  
+  .upperLeftBlob {
+  position:absolute;
+  left: calc(50% - 685.8px/2 - 662.94px);
+  top:322px;
+  margin-left:0px;
+  }
+  
+  #yellowBlobRightMargin {
+  position:absolute;
+  left: 1053px;
+  top: 545px;
+  z-index: -5;
+  }
+  
+  #blueRightblob {
+  position:absolute;
+  left: 1050px;
+  top: 1344px;
+  margin-right:0px;
+  z-index: -5;
+  }
+  
+  #yellowLeftBlob {
+  position:absolute;
+  left: calc(60% - 587.26px/2 - 767.65px);
+  top: 1671px;
+  z-index: -5;
+  }
+  
+  #blueLowerLeft{
+  position:absolute;
+  left: calc(50% - 685.8px/2 - 606.53px);
+  top: 2800.px;
+  z-index: -5;
+  }
+  
+  /* font styling below */
+  
+  .button {
+    font-family: Noto Sans, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 48px;
+    color: #FFFF;
+    background-color: #A74546;
+    }
+  
+  #myName {
+    font-family: Raleway; sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 96px;
+    line-height: 72px;
+    }
+  
+  p {
+    font-family: Noto Sans, Oriya;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 34px;
+    height: 238px;
+    width:648px
+    }
+  
+  .csDescription{
+    font-family: Noto Sans, Oriya;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+    
+    color: #FFFFFF;
+    }
+    
+    h3 {
+    margin-left: 20px;
+    font-family: Rock Salt, cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34.3164px;
+    line-height: 82px;
+  
+    color: #FFFFFF
+    }
+    
+  
+  /* CSS style for Mobile Devices*/
+  
+  @media only screen and (max-width:600) {
+  .projectPicture, .profilePic {
+    flex-direction: column;
+    }
+  } 
+  
+  @media only screen and (max-width:600) {
+  .csContainer, .herolmg, .projectPictureContainer {
+    display: flex; 
+    flex: auto;
+    }
+  }
+  
+  @media only screen and (max-width:600) {
+  .content,.csDescription {
+    float: right;
+    font-size: 13px;
+    }
+  }
+  
+  @media only screen and (max-width:600) {
+  h1 {
+    font-size: 24px;  
+    }
+   h3 {
+     font-size: 18px;
+   } 
+  }
